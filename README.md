@@ -8,6 +8,16 @@ Python is one of the more forgiving language to learn and extremely common in Ro
 - [How to think like a Computer Scientist: Learning with Python 3](https://runestone.academy/runestone/books/published/thinkcspy/index.html)
 - [Introduction to Computer Science and Programming Using Python](https://www.edx.org/course/introduction-to-computer-science-and-programming-7)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+- [Installing packages in Python using Pip](https://realpython.com/what-is-pip/) 
+### Numerical tools
+Python is a great general purpose language but as engineers, we need tools to not only write logical operations but also do maths. The tools for the job are the Numpy, Scipy and Matplotlib, the holy trinity of numerical python. 
+- [Numpy for MATLAB users](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html) 
+- [Matplotlib tutorials](https://matplotlib.org/stable/tutorials/index.html)
+- [SciPy user guide](https://docs.scipy.org/doc/scipy/reference/tutorial/)
+### OpenCV
+If you want to do image and video processing in Python, the default tool is OpenCV
+- [Official OpenCV tutorial](https://docs.opencv.org/master/df/d65/tutorial_table_of_content_introduction.html)
+- [OpenCV Tutorial: A Guide to Learn OpenCV](https://www.pyimagesearch.com/2018/07/19/opencv-tutorial-a-guide-to-learn-opencv/)
 
 ## Linux
 ![image](https://user-images.githubusercontent.com/28722943/126432664-0f63a4ae-65c1-4264-bb6a-7df1bf9bedcf.png)
