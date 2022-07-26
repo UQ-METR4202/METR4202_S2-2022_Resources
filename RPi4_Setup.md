@@ -1,5 +1,6 @@
 http://wiki.ros.org/noetic/Installation/Ubuntu
-Setup your sources.list
+
+# Setup your sources.list
 
 Setup your computer to accept software from packages.ros.org.
 
@@ -99,10 +100,52 @@ Make sure to setup your workspace
 source devel/setup.sh
 ```
 Download VSCode
-```
+```console
 wget https://update.code.visualstudio.com/1.69.2/linux-deb-arm64/stable
 ```
 Install VSCode
-```
+```console
 sudo dpkg -i code_1.69.2-1658161440_arm64.deb
+```
+
+
+# Dynamixel Setup
+
+```console
+sudo apt-get update
+sudo apt-get upgrade
+```
+```console
+cd ~/catkin_ws/src
+```
+```console
+git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
+git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
+git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+```
+Build the workspace from source files
+```console
+catkin_make
+```
+```console
+cd ~/Downloads
+```
+```console
+wget https://raw.githubusercontent.com/ROBOTIS-GIT/dynamixel-workbench/master/99-dynamixel-workbench-cdc.rules
+```
+```console
+sudo cp ./99-dynamixel-workbench-cdc.rules /etc/udev/rules.d/
+```
+```console
+sudo udevadm control --reload-rules
+```
+```console
+sudo udevadm trigger
+```
+Check if the USB2Dynamixel adapter is detected (/dev/tty*)
+```console
+ls /dev/tty*
+```
+```console
+rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
 ```
