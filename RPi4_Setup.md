@@ -84,15 +84,20 @@ sudo gpasswd -a $USER realtime
 
 Create a catkin_workspace directory
 ```
-mkdir cd -p ~/catkin_ws/src
+mkdir -p ~/catkin_ws/src
+```
+Make the catkin workspace
+```
+cd ~/catkin_ws
+catkin_make
+```
+Go back to the root of the catkin workspace
+```
+cd ~/catkin_ws/src
 ```
 Clone the Ximea ROS Camera Repository
 ```
 git clone https://github.com/wavelab/ximea_ros_cam.git
-```
-Go back to the root of the catkin workspace
-```
-cd ~/catkin_ws
 ```
 Make sure to setup your workspace
 ```
