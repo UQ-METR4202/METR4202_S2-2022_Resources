@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+      "https://example.com/foo/bar/custom-theme.css",
+      "/Users/valencimm/METR4202_Resources/themes/uq-theme.css"
+    ]
+}

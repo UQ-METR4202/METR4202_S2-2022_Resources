@@ -1,44 +1,95 @@
 ---
 marp: true
 theme: uncover
-header: METR4202 Prac 1
+style: |
+    :root {
+    --color-background: #FFFFFF;
+    --color-foreground: #8B2781;
+    --color-highlight: #8B2781;
+    --color-dimmed: #888888;
+    }
+    h1 {
+      color: #51247A
+    }
+    h2 {
+      color: #8B2781
+    }
+    h3 {
+      color: #220033
+    }
+    section {
+      font-size: 30px;
+    }
 paginate: true
 ---
 
-<!--_class: invert -->
-# Hello everyone :robot:
-Welcome to METR4202 pracs!
+
+# METR4202
+## Robotics & Automation
+### Week 1: Workshop - Intro to ROS
 
 ---
-<!-- backgroundColor: beige -->
-### What are pracs about?
-- Learning "Robot Operating System" (ROS) and other *practical* robotics skills to compliment theory
-- Making progress on and asking questions about your projects
+
+# Hello everyone! :robot:
+Welcome to the METR4202 workshops!
+
+---
+# What are workshops about?
+- Putting robotics theory into practice
+- Implementing equations and algorithms in code
+- Learning about frameworks for robotics (e.g. ROS)
+- Making progress on the robotics team project
+
+
+---
+# What are we using?
+## ROS: Robot Operating System
+### Not *quite* an 'operating system'
+From **ros.org**:
+"ROS is a set of software libraries and tools that help you build robot applications."
 
 --- 
-<!-- class: smol -->
-## Overall Learning Objectives
-### Learning ROS
-- Understand what **Robot Operating System** (ROS) is and what it is used for in robotics
-- Employ the basic concepts of ROS such as topics and nodes in order to create **modular components** of robotics software  
-- **Understand the different subtasks** that exists in common robotics problems such as pick-and-place and how they fit togther in ROS
+# Overall Learning Objectives
+- **LO-1**: To understand how to use ROS effectively do design modular robotic systems
+- **LO-2**: To be able to design a simple robotic system for application in an automated task
+- **LO-3**: To be able to program a robotic system to algorithmically plan movements to execute a task effectively
 
 ---
-## Learning Objectives - Prac 1
-- Understand ROS **topics**, **publishers** and **subscribers**, and **Msgs** for communicated packed data around in a modular and extensible way
+# LO-1: ROS
+  - **LO-1.1**: To be able to understand basic concepts in ROS (e.g. nodes, topics, messages, services, actions)
+  - **LO-1.2**: To be able to *use* common robotics libraries and tools in ROS
+  - **LO-1.3**: To be able to write robotics libraries for use in the team project
+  - **LO-1.4**: To be able to explain how the modular parts of a robot system communicate with each other
+
+---
+
+# LO-2: 
+- **LO-2**: To be able to design a simple robotic system and apply as a method of automating a process
+  - **LO-2.1**: To understand how the robot design, and configuration of links, joints and actuators affects the reachability and manipulability of the end-effector
+  - **LO-2.1**: To understand how the design and component selection of the robot affects the dynamics and control of the robot.
+  - **LO-2.3**: To understand how sensor (e.g. camera) selection and placement affects robot perception
+
+---
+# LO-3: 
+  - **LO-3.1**: To understand how control algorithms can be used in a practical robotic system
+  - **LO-3.2**: To demonstrate how motion planning can be integrated into the robot motion pipeline
+  - **LO-3.3**: To demonstrate how basic image sensing, processing and computer vision techniques can be used by the robot to sense the environment
+  
+---
+
+## Learning Objectives
+### Workshop 1a [PRA]
+- Understand ROS **topics**, **publishers** and **subscribers**, and **msgs** for communicated packed data around in a modular and extensible way
 - Understand **Raspberry Pis**, the **Linux** operating system, the **Python** language and how they fit with ROS
 - Understand an overview of the **METR4202 project** this semester, what will be done and how these pracs help you
 ---
-<!--backgroundColor: default -->
-<!-- _class: big invert -->
+
 # What is ROS?
 It stands for **Robot Operating System**
 
 It is not an operating system :thinking: 
 
 ---
-<!-- _class: big 
-backgroundColor: beige -->
 ![](2021-07-24-19-28-37.png)
 is a
 ### communication framework
