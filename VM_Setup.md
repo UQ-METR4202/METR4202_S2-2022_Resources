@@ -22,7 +22,7 @@ Click next.
 Allocate as much RAM as you would like.
   - Note: The recommended amount of RAM for a VM is typically less than *half* of the system memory.
 E.g. for a typical modern laptop, 4 GB for the virtual and 4 GB for the host machine is fine.
-n/view). You can locate the file with the green arrow symbol.
+You can locate the file with the green arrow symbol.
 
 - **(e)**
 The following screen will appear.
