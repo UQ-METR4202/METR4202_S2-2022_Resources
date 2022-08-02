@@ -69,10 +69,6 @@ Linux is an **open-source** operating system. ROS is, for the most part, intimat
 ROS hijacks the Linux "networking stack" for communication and usually assumes it's running on **Ubunutu**, a particular distribution of Linux. 
 
 ---
-### A reference for learning software
-### https://tinyurl.com/metr4202resources
-
----
 ## The big one
 # The METR4202 Project
 Cue relevant document
