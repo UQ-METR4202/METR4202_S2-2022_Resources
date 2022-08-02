@@ -1,16 +1,35 @@
 ---
 marp: true
 theme: uncover
-header: METR4202 Prac 1
+style: |
+    :root {
+    --color-background: #FFFFFF;
+    --color-foreground: #8B2781;
+    --color-highlight: #8B2781;
+    --color-dimmed: #888888;
+    }
+    h1 {
+      color: #51247A
+    }
+    h2 {
+      color: #8B2781
+    }
+    h3 {
+      color: #220033
+    }
+    section {
+      font-size: 30px;
+    }
 paginate: true
 ---
+
 
 <!--_class: invert -->
 # Welcome back :robot:
 #### Prac 2: Electric Boogaloo
 
 ---
-<!-- _backgroundColor: beige -->
+
 ### Learning Objectives - Prac 2
 - Setting up ROS and your **project structure**
 - **Writing a ROS publisher/subscriber** node in Python
@@ -19,7 +38,6 @@ paginate: true
 
 --- 
 # Writing a publisher
-<!-- class: invert-->
 ##### Lets write a publisher to publish position commands
 Starting off with a new `publisher.py` file...
 ```python
@@ -68,29 +86,3 @@ catkin_install_python(PROGRAMS scripts/publisher.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 ```
----
-<!-- _backgroundColor: beige -->
-<!-- class: default -->
-## Different subtasks of a robot manipulator
-Let's try and understand what is involved in making 
-
-
-<style>
-section.leftt h1, section.left h3, section.left p, section.left li, section.left ul {
-  text-align: left;
-}
-section.left ul, section.left li {
-    padding: 10;
-    margin: 0;
-}
-section.big p, section.big ul {
-  font-size: 50px;
-  font-weight: 400;
-}
-
-section.smol ul {
-  font-size: 35px;
-  font-weight: 300;
-}
-
-</style>
