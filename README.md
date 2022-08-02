@@ -2,6 +2,9 @@
 # Resources for METR4202
 METR4202 is a challenging course, not just in theory, but also requires you to be comfortable with a suite of software and technologies that are not necessarily taught in your degree that you may struggle with without the right background. Here lie resources for teaching METR4202 supporting background, first compiled for the Semester 2, 2021 run of the course. You don't need to learn all of these in full depth as is offered by many of the resources below but they are good references to learn stuff you're missing, or to remember stuff you've learnt previously before. If more resources need to be added, make a pull request to this repository. 
 
+## Virtual machine
+
+
 # Useful links
 ## Python
 <img src=https://user-images.githubusercontent.com/28722943/126432640-44d3f99e-18a6-4aef-bead-ba5ce70d1334.png width="150">
