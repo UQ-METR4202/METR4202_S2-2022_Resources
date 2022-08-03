@@ -4,7 +4,7 @@ METR4202 is a challenging course, not just in theory, but also requires you to b
 
 ## Setting up a Virtual machine with ROS
 
-A Virtual Machine with ROS installed is required for participation in the practical Workshop sessions. You can find the instructions here, and the link to the virtual machine here. 
+A Virtual Machine with ROS installed is required for participation in the practical Workshop sessions. You can find the instructions [here](VM_Setup.md)
 
 # Other useful links
 ## Python
