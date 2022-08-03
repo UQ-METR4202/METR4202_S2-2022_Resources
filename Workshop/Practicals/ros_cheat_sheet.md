@@ -69,6 +69,8 @@ source ./devel/setup.bash
 ```
 Only one instance of the ROS master should be initialised.
 
+By convention, packages are located and created in the `~/catkin_ws/src` folder.
+
 Always compile packages in the root workspace directory. If new executables, launch files or config files are added, then you must source the workspace with `source devel/setup.bash`.
 
 Hint: sourcing your underlay with `source /opt/ros/noetic/setup.bash` can be done automatically by adding the command in `~/.bashrc`.
