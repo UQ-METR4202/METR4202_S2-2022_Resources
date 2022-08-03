@@ -15,7 +15,7 @@ You can download the course book for Free from the Northwestern Universtiy, Mode
 - [Default 8.5x11 or A4 version](http://hades.mech.northwestern.edu/images/2/25/MR-v2.pdf). Printable version with 10 pt font and large margins.
 - [Tablet version](http://hades.mech.northwestern.edu/images/0/0c/MR-tablet-v2.pdf). Margins have been eliminated so that no space is wasted when viewing the document on a computer or tablet. 
 
-Software libraries for Python, Matlab and Mathematica are available[here](https://github.com/NxRLab/ModernRobotics)
+Software libraries for Python, Matlab and Mathematica are available [here](https://github.com/NxRLab/ModernRobotics)
 
 ## Python
 <img src=https://user-images.githubusercontent.com/28722943/126432640-44d3f99e-18a6-4aef-bead-ba5ce70d1334.png width="150">
