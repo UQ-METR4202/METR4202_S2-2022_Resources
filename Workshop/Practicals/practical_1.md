@@ -34,7 +34,4 @@ paginate: true
 - ROS stands for **R**obot **O**perating **S**ystem
 - It is a middleware for communicating between processes that independently perform tasks for your robot stack (e.g., sensing, decision-making, acting)
 - As robot developers you will use ROS as a library inside your Python or C++ code
-- It is recommended to get comfortable with BASH (terminal) to run ROS commands during development (there is a cheat sheet in the METR4202 repository for your convenience)
-
----
-
+- It is recommended to get comfortable with BASH (terminal) to run ROS commands during development [(there is a cheat sheet in the METR4202 repository for your convenience)](https://github.com/UQ-METR4202/METR4202_S2-2022_Resources/blob/main/Workshop/Practicals/ros_cheat_sheet.md)
