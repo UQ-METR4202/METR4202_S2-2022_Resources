@@ -8,7 +8,7 @@ A Virtual Machine with ROS installed is required for participation in the practi
 
 # Other useful links
 ## Modern Robotics Book
-<img src= http://hades.mech.northwestern.edu/index.php/File:ModernRoboticsCover.jpg>
+<img src=http://hades.mech.northwestern.edu/images/0/08/ModernRoboticsCover.jpg>
 
 You can download the course book for Free from the Northwestern Universtiy, Modern Robotics Wiki page:
 
