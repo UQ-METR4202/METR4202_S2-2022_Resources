@@ -75,7 +75,7 @@ rostopic echo /example_topic
 ---
 
 ### Exercise 2 (Your turn)
-Run the following command and try to publish to the node in a separate terminal.
+Run the following command and try to publish to the node in a separate terminal. There are several ways to do this.
 
 *Terminal 1*
 ```SH
@@ -90,7 +90,7 @@ rosrun rospy_tutorials listener.py
 ---
 
 ### Exercise 2 (Your turn)
-Run the following command and try to publish to the node in a separate terminal.
+Run the following command and try to publish to the node in a separate terminal. There are several ways to do this.
 
 *Terminal 1*
 ```SH
@@ -99,7 +99,7 @@ rosrun rospy_tutorials listener.py
 
 *Terminal 2*
 ```SH
-rostopic pub /chatter std_msgs/String "data: hi"
+rostopic pub /chatter std_msgs/String 'data: hi'
 ```
 
 ---
@@ -114,7 +114,15 @@ rosrun turtlesim turtlesim_node
 
 *Terminal 2*
 ```SH
-# Hint: You can fill out the data after entering the right topic by pressing <tab> twice
+# Hint: When entering the message data, you may use this format instead
+rostopic pub /topic example_msgs/Example -- '[a, b, c]' '[...]'
+
+# Each array will correspond to a component of the message type
+# For example,
+rostopic pub /topic geometry_msgs/Pose -- '[1, 2, 3]' '[4, 5, 6]'
+# Where [1, 2, 3] are the positions x, y, z
+# And [4, 5, 6] are the orientations x, y, z
+# See `rosmsg show geometry_msgs/Pose`
 ```
 
 ---
@@ -131,3 +139,14 @@ rosrun turtlesim turtlesim_node
 ```SH
 rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -- '[0, 0, 0]' '[0, 0, 50]'
 ```
+
+---
+
+## Next Week
+- Learn how to create your own ROS package
+- Write simple ROS nodes (executables)
+- Launch multiple nodes with launch files
+- Learn about more advanced features of ROS
+  - Parameters
+  - Services
+  - Actions
