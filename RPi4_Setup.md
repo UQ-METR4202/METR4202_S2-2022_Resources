@@ -1,42 +1,72 @@
-http://wiki.ros.org/noetic/Installation/Ubuntu
+# Introduction
+The Raspberry Pi Model 4B comes with a fresh install of Ubuntu MATE 20.04.
+In order to get the required functionality for the project, you will need to setup some things on the RPi4.
+This includes installing relevant libraries, drivers and tools.
 
-# Setup your sources.list
+In the project you will need the following:
+- ROS Noetic
+- XIMEA Camera Spftware
+- Dynamixel Software
+- Camera Calibration Libraries
+- Aruco Tag Detection Libraries
+
+The following document will cover the required steps to get these to work on the RPi4.
+Of course, these steps should also work on any machine running Ubuntu 20.04, with minor differences.
+
+# Contents
+- [01 Setting up ROS Noetic](1-setting-up-ros-noetic)
+
+# 1 Setting up ROS Noetic
+
+The following instructions can also be found on the ROS wiki [here](http://wiki.ros.org/noetic/Installation/Ubuntu).
+
+## 1.1 Setting up your sources and keys
 
 Setup your computer to accept software from packages.ros.org.
 
-```
+```console
     sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.l
 ```
 
 Set up your keys
 
-```
+```console
     sudo apt install curl # if you haven't already installed curl
     curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
-# ROS Installation
+#  1.2 Installing ROS Noetic (Full Desktop)
 
 First, make sure your Debian package index is up-to-date:
-
-```
+```console
     sudo apt update
 ```
 
 Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
 
-```
+```console
     sudo apt install ros-noetic-desktop-full
 ```
     
-# Bash
+# 1.3 Setting up the ROS Environment
 
-```
+If you would like to have ROS automatically setup when you open a terminal use these commands:
+```console
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+bash
+```
+Otherwise, if you would like to have a shortcut command (alias) for running the environment setup, use these commands:
+
+```console
+echo "alias noetic='source /opt/ros/noetic/setup.bash'" >> ~/.bash_aliases
+bash
 ```
 
-# Initialise rosdep
-
+# 1.4 Setting up dependencies for packages
+The following command will install tools for handling dependencies.
+```console
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+```
+Install Python ROSdep with the following command:
 ```
 sudo apt install python3-rosdep
 sudo rosdep init
