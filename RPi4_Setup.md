@@ -14,7 +14,7 @@ The following document will cover the required steps to get these to work on the
 Of course, these steps should also work on any machine running Ubuntu 20.04, with minor differences.
 
 # Contents
-- [01 Setting up ROS Noetic](1-setting-up-ros-noetic)
+- [1 Setting up ROS Noetic](1-setting-up-ros-noetic)
 
 # 1 Setting up ROS Noetic
 
