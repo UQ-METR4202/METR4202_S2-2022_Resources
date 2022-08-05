@@ -67,71 +67,70 @@ The following command will install tools for handling dependencies.
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
 Install Python ROSdep with the following command:
-```
+```console
 sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update
 ```
 
 # Install Fiducial Packages
-```
+```console
 sudo apt install ros-noetic-fiducials ros-noetic-fiducial-msgs
 ```
 
 # Installing Ximea Software Package
-
-```
+```console
 sudo apt-get update && sudo apt-get install build-essential linux-headers-"$(uname -r)" 
 ```
 Download the zip file from the XIMEA website
-```
+```console
 wget https://www.ximea.com/downloads/recent/XIMEA_Linux_SP.tgz
 ```
 Unzip the file
-```
+```console
 tar xzf XIMEA_Linux_SP.tgz
 ```
 Enter the package folder and install
-```
+```console
 cd package && ./install
 ```
 
 Disable the USB memory limits
-```
+```console
 echo 0 | sudo tee /sys/module/usbcore/parameters/usbfs_memory_mb
 ```
 Place the following in */etc/security/limits.conf* to make the Ximea camera driver have real time priority
-```
+```console
 *               -       rtprio          0
 @realtime       -       rtprio          81
 *               -       nice            0
 @realtime       -       nice            -16
 ```
 Then add the current user to the group realtime
-```
+```console
 sudo groupadd realtime
 sudo gpasswd -a $USER realtime
 ```
 
 Create a catkin_workspace directory
-```
+```console
 mkdir -p ~/catkin_ws/src
 ```
 Make the catkin workspace
-```
+```console
 cd ~/catkin_ws
 catkin_make
 ```
 Go back to the root of the catkin workspace
-```
+```console
 cd ~/catkin_ws/src
 ```
 Clone the Ximea ROS Camera Repository
-```
+```console
 git clone https://github.com/wavelab/ximea_ros_cam.git
 ```
 Make sure to setup your workspace
-```
+```console
 source devel/setup.sh
 ```
 Download VSCode
