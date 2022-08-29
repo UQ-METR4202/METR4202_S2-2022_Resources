@@ -136,6 +136,11 @@ Make sure to setup your workspace
 ```console
 source devel/setup.bash
 ```
+
+```console
+cd ~/Downloads
+```
+
 Download VSCode
 ```console
 wget https://update.code.visualstudio.com/1.69.2/linux-deb-arm64/stable
