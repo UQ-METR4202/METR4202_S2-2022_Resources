@@ -143,11 +143,11 @@ cd ~/Downloads
 
 Download VSCode
 ```console
-wget https://update.code.visualstudio.com/1.69.2/linux-deb-arm64/stable
+wget -O code_arm64.deb https://update.code.visualstudio.com/1.69.2/linux-deb-arm64/stable
 ```
 Install VSCode
 ```console
-sudo dpkg -i code_1.69.2-1658161440_arm64.deb
+sudo dpkg -i code_arm64.deb
 ```
 
 
