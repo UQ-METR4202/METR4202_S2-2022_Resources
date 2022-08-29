@@ -100,10 +100,10 @@ echo 0 | sudo tee /sys/module/usbcore/parameters/usbfs_memory_mb
 ```
 Place the following in */etc/security/limits.conf* to make the Ximea camera driver have real time priority
 ```console
-*               -       rtprio          0
+echo "*               -       rtprio          0
 @realtime       -       rtprio          81
 *               -       nice            0
-@realtime       -       nice            -16
+@realtime       -       nice            -16" | sudo tee -a /etc/security/limits.conf
 ```
 Then add the current user to the group realtime
 ```console
