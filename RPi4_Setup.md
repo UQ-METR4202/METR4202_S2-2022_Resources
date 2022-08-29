@@ -31,7 +31,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 Set up your keys
 
 ```console
-sudo apt install curl # if you haven't already installed curl
+sudo apt install -y curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 #  1.2 Installing ROS Noetic (Full Desktop)
@@ -44,7 +44,7 @@ sudo apt update
 Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
 
 ```console
-sudo apt install ros-noetic-desktop-full
+sudo apt install -y ros-noetic-desktop-full
 ```
     
 # 1.3 Setting up the ROS Environment
@@ -64,23 +64,22 @@ bash
 # 1.4 Setting up dependencies for packages
 The following command will install tools for handling dependencies.
 ```console
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+sudo apt install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
 Install Python ROSdep with the following command:
 ```console
-sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update
 ```
 
 # Install Fiducial Packages
 ```console
-sudo apt install ros-noetic-fiducials ros-noetic-fiducial-msgs
+sudo apt install -y ros-noetic-fiducials ros-noetic-fiducial-msgs
 ```
 
 # Installing Ximea Software Package
 ```console
-sudo apt-get update && sudo apt-get install build-essential linux-headers-"$(uname -r)" 
+sudo apt-get update && sudo apt-get install -y build-essential linux-headers-"$(uname -r)" 
 ```
 Download the zip file from the XIMEA website
 ```console
@@ -131,7 +130,7 @@ git clone https://github.com/wavelab/ximea_ros_cam.git
 ```
 Make sure to setup your workspace
 ```console
-source devel/setup.sh
+source devel/setup.bash
 ```
 Download VSCode
 ```console
@@ -147,7 +146,7 @@ sudo dpkg -i code_1.69.2-1658161440_arm64.deb
 
 ```console
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y upgrade
 ```
 ```console
 cd ~/catkin_ws/src
