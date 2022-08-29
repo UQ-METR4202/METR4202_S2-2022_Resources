@@ -115,19 +115,23 @@ Create a catkin_workspace directory
 ```console
 mkdir -p ~/catkin_ws/src
 ```
+
+Go back to the root of the catkin workspace
+```console
+cd ~/catkin_ws/src
+```
+
+Clone the Ximea ROS Camera Repository
+```console
+git clone https://github.com/wavelab/ximea_ros_cam.git
+```
+
 Make the catkin workspace
 ```console
 cd ~/catkin_ws
 catkin_make
 ```
-Go back to the root of the catkin workspace
-```console
-cd ~/catkin_ws/src
-```
-Clone the Ximea ROS Camera Repository
-```console
-git clone https://github.com/wavelab/ximea_ros_cam.git
-```
+
 Make sure to setup your workspace
 ```console
 source devel/setup.bash
