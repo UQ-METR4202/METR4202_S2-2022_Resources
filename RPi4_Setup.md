@@ -67,7 +67,7 @@ The following command will install tools for handling dependencies.
 sudo apt install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
 Install Python ROSdep with the following command:
-```consolerosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
+```console
 sudo rosdep init
 rosdep update
 ```
@@ -166,7 +166,7 @@ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
 git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 ```
 Build the workspace from source files
-```consolerosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
+```console
 cd ~/catkin_ws
 ```
 ```console
