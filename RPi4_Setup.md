@@ -195,7 +195,7 @@ ls /dev/tty*
 cd ~/catkin_ws
 ```
 ```console
-source devel/setup.bashrosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
+source devel/setup.bash
 ```
 ```console
 rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
