@@ -35,7 +35,6 @@ sudo apt install -y curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 #  1.2 Installing ROS Noetic (Full Desktop)
-rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
 First, make sure your Debian package index is up-to-date:
 ```console
 sudo apt update
@@ -132,7 +131,7 @@ cd ~/catkin_ws
 catkin_make
 ```
 
-Make sure to setup your worksparosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0ce
+Make sure to setup your workspace
 ```console
 source devel/setup.bash
 ```
