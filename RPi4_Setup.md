@@ -167,6 +167,9 @@ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 ```
 Build the workspace from source files
 ```console
+cd ~/catkin_ws
+```
+```console
 catkin_make
 ```
 ```console
