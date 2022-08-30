@@ -43,7 +43,7 @@ sudo apt update
 
 Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
 
-```consolerosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
+```console
 sudo apt install -y ros-noetic-desktop-full
 ```
     
