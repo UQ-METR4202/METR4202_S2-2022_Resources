@@ -35,7 +35,7 @@ sudo apt install -y curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 #  1.2 Installing ROS Noetic (Full Desktop)
-
+rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
 First, make sure your Debian package index is up-to-date:
 ```console
 sudo apt update
@@ -43,7 +43,7 @@ sudo apt update
 
 Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
 
-```console
+```consolerosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
 sudo apt install -y ros-noetic-desktop-full
 ```
     
@@ -67,7 +67,7 @@ The following command will install tools for handling dependencies.
 sudo apt install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
 Install Python ROSdep with the following command:
-```console
+```consolerosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
 sudo rosdep init
 rosdep update
 ```
@@ -132,7 +132,7 @@ cd ~/catkin_ws
 catkin_make
 ```
 
-Make sure to setup your workspace
+Make sure to setup your worksparosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0ce
 ```console
 source devel/setup.bash
 ```
@@ -166,7 +166,7 @@ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
 git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 ```
 Build the workspace from source files
-```console
+```consolerosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
 cd ~/catkin_ws
 ```
 ```console
@@ -190,6 +190,12 @@ sudo udevadm trigger
 Check if the USB2Dynamixel adapter is detected (/dev/tty*)
 ```console
 ls /dev/tty*
+```
+```console
+cd ~/catkin_ws
+```
+```console
+source devel/setup.bashrosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
 ```
 ```console
 rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
