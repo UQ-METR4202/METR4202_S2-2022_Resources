@@ -97,7 +97,7 @@ Disable the USB memory limits
 ```console
 echo 0 | sudo tee /sys/module/usbcore/parameters/usbfs_memory_mb
 ```
-Place the following in */etc/security/limits.conf* to make the Ximea camera driver have real time priority
+Run the following to make the Ximea camera driver have real time priority
 ```console
 echo "*               -       rtprio          0
 @realtime       -       rtprio          81
