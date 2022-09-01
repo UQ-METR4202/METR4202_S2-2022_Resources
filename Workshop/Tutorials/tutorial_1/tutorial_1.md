@@ -26,7 +26,7 @@ paginate: true
 
 # METR4202
 ## Robotics & Automation
-### Week 1: Tutorial - Degrees of Freedom & Configuration Space
+### Week 2: Tutorial - Degrees of Freedom & Configuration Space
 
 ---
 
@@ -73,3 +73,9 @@ $$
 
 # Exercise 3: Upper-Limb Exoskeleton
 ![width:800px](ex_3.png)
+
+
+---
+
+# Exercise 4: Upper-Limb Exoskeleton
+![width:500px](ex_4.png)
