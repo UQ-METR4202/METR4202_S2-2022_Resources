@@ -150,7 +150,7 @@ sudo dpkg -i code_arm64.deb
 ```
 
 
-# Dynamixel Setup
+# Dynamixel Setup (DO NOT FOLLOW THIS FOR NOW; UPDATE COMMING SOON)
 
 ```console
 sudo apt-get update
