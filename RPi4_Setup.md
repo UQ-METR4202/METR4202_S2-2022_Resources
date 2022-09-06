@@ -150,52 +150,18 @@ sudo dpkg -i code_arm64.deb
 ```
 
 
-# Dynamixel Setup (DO NOT FOLLOW THIS FOR NOW; UPDATE COMMING SOON)
+# Dynamixel Setup
 
+Install Dynamixel SDK for ROS
 ```console
-sudo apt-get update
-sudo apt-get -y upgrade
+sudo apt install ros-noetic-dynamixel-sdk
 ```
+
+Clone and build Dynamixel interface
 ```console
 cd ~/catkin_ws/src
-```
-```console
-git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
-git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-```
-Build the workspace from source files
-```console
+git clone https://github.com/UQ-METR4202/dynamixel_interface
+git clone https://github.com/UQ-METR4202/dynamixel_slider
 cd ~/catkin_ws
-```
-```console
-catkin_make
-```
-```console
-cd ~/Downloads
-```
-```console
-wget https://raw.githubusercontent.com/ROBOTIS-GIT/dynamixel-workbench/master/99-dynamixel-workbench-cdc.rules
-```
-```console
-sudo cp ./99-dynamixel-workbench-cdc.rules /etc/udev/rules.d/
-```
-```console
-sudo udevadm control --reload-rules
-```
-```console
-sudo udevadm trigger
-```
-Check if the USB2Dynamixel adapter is detected (/dev/tty*)
-```console
-ls /dev/tty*
-```
-```console
-cd ~/catkin_ws
-```
-```console
-source devel/setup.bash
-```
-```console
-rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0
+catkin build
 ```
