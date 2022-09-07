@@ -165,3 +165,11 @@ git clone https://github.com/UQ-METR4202/dynamixel_slider
 cd ~/catkin_ws
 catkin build
 ```
+## Error can't open port
+Run the following commands and REBOOT.
+```console
+sudo usermod -a -G dialout $USER
+```
+
+## Error can't ping ID #
+Ensure the above commands are run. DO NOT CLONE THE CSIRO-ROBOTICS dynamixel_interface.
