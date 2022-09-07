@@ -165,8 +165,16 @@ git clone https://github.com/UQ-METR4202/dynamixel_slider
 cd ~/catkin_ws
 catkin build
 ```
+
+Usage
+```console
+roslaunch dynamixel_interface dynamixel_interface_controller.launch # JUST THE CONTROLLER
+roslaunch dynamixel_interface dynamixel_interface_slider.launch # BOTH CONTROLLER AND SLIDER GUI
+```
+Ensure only one is run. Running boths causes a stack error.
+
 ## Error can't open port
-Run the following commands and REBOOT.
+Run the following command and REBOOT
 ```console
 sudo usermod -a -G dialout $USER
 ```
