@@ -110,35 +110,11 @@ sudo groupadd realtime
 sudo gpasswd -a $USER realtime
 ```
 
-Create a catkin_workspace directory
-```console
-mkdir -p ~/catkin_ws/src
-```
+Replug the USB 3.0 Cable, and run the desktop app to check if the camera works.
 
-Go back to the root of the catkin workspace
-```console
-cd ~/catkin_ws/src
-```
+---
 
-Clone the Ximea ROS Camera Repository
-```console
-git clone https://github.com/wavelab/ximea_ros_cam.git
-```
-
-Make the catkin workspace
-```console
-cd ~/catkin_ws
-catkin_make
-```
-
-Make sure to setup your workspace
-```console
-source devel/setup.bash
-```
-
-```console
-cd ~/Downloads
-```
+# VSCode Setup
 
 Download VSCode
 ```console
